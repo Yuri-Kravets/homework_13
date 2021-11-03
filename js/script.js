@@ -1,11 +1,8 @@
 
 function getDegree(num, degree = 1) {
-    if (isNaN(num)) {
-      return alert ('some error'); 
-    }
-     if (isNaN(degree)) {
-        return alert ('some error');
-    }
+    if (num.trim() === '' || isNaN(num) || num === null ) return ('some error');
+    if (degree.trim() === '' || isNaN(degree) || degree === null ) return ('some error');
+    
     return alert(Math.pow(num,degree));
     
 }
