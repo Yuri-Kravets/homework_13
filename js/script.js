@@ -1,12 +1,13 @@
 
 function getDegree(num, degree = 1) {
-    if (num === null || isNaN(num) || num < 1) {
+    if (isNaN(num)) {
       return alert ('some error'); 
-    } else if (degree === null || isNaN(degree)) {
+    }
+     if (isNaN(degree)) {
         return alert ('some error');
     }
-      alert(Math.pow(num,degree));
-    return
+    return alert(Math.pow(num,degree));
+    
 }
 let num = +prompt('введите число');
 let degree = +prompt('введите желаемую степень');
